@@ -1,0 +1,15 @@
+.primary-btn{
+  color: #fff;
+  font-size: 2rem;
+
+  border: none;
+  background-color: rgb(24, 44, 51);
+  border-radius: 50%;
+  box-shadow: 1px 1px rgba(3, 47, 62, 0.59);
+  min-height: 50px;
+  min-width: 50px;
+  z-index: 1000;
+  &:hover {
+    cursor: grab;
+  }
+}

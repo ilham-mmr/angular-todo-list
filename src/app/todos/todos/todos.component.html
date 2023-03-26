@@ -1,0 +1,24 @@
+<div class="wrapper">
+  <div class="container-todos">
+    <ng-container *ngIf="(todoList$ | async)?.length; else noTodos">
+      <ul>
+        <li *ngFor="let todo of todoList$ | async">
+          <app-todo [todo]="todo"></app-todo>
+        </li>
+      </ul>
+    </ng-container>
+  </div>
+</div>
+
+<ng-template #noTodos>
+  <div class="no-todos">
+    <h3>No todos, Start adding them now!</h3>
+    <img src="/assets/1.svg" alt="no todos" class="illustration" />
+  </div>
+</ng-template>
+
+<a href="" [routerLink]="['/todos/add']">
+  <div class="floating-btn">
+    <app-custom-button text="+"></app-custom-button>
+  </div>
+</a>

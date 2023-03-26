@@ -1,0 +1,10 @@
+<button class="primary-btn" (click)="onClick($event)">
+  <ng-container *ngIf="!textProps else content" >
+    <ng-content select=".icon"></ng-content>
+  </ng-container>
+</button>
+
+<ng-template #content>
+
+  {{ textProps }}
+</ng-template>

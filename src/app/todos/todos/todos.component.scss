@@ -1,0 +1,61 @@
+:host {
+
+  // padding:20px;
+}
+.wrapper{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+
+}
+
+.floating-btn {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.container-todos {
+  // border: 2px solid red;
+  display: block;
+  background-color: rgba(245, 245, 245, 0.59);
+  box-shadow: 2px 2px 4px rgba(0, 23, 71, 0.15);
+  border-radius: 32px;
+  margin: 12px 24px;
+  min-height: 80%;
+  width: 100%;
+  max-width: 600px;
+  overflow: auto;
+
+  @media screen and (min-width: 500px) {
+  }
+  ul {
+    padding: 0;
+  }
+  li {
+    list-style: none;
+  }
+}
+
+.no-todos {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .illustration {
+    height: 200px;
+    margin: 0;
+  }
+}
+
+
+
+.title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  // font-size: ;
+  text-transform: uppercase;
+}
